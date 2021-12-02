@@ -15,7 +15,11 @@ console.log(solution1);
 let solution2 = 0;
 let sums = [];
 for (let i = 1; i < inputSplit.length - 1; i++) {
-  sums.push(inputSplit[i - 1] + inputSplit[i] + inputSplit[i + 1]);
+  sums.push(
+    parseInt(inputSplit[i - 1]) +
+      parseInt(inputSplit[i]) +
+      parseInt(inputSplit[i + 1])
+  );
 }
 
 sums.reduce((prev, curr) => {
